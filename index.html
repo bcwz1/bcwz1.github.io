@@ -1,301 +1,457 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-cn">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+ <meta http-equiv="refresh" content="21">  
+<title>BC工具</title> 
+  <meta name="keywords" content="BC工具" /> 
+  <meta name="description" content="BC工具" /> 
+  <link rel="shortcut icon" type="image/x-icon" href="http://152.136.120.155/png/logo.png" /> 
+  <link rel="apple-touch-icon" href="http://152.136.120.155/png/logo.png" /> 
+  <link type="image/vnd.microsoft.icon" href="http://152.136.120.155/png/logo.png" /> 
+  <link href="../css/style.css" rel="stylesheet" />  
+  <script type="text/JavaScript">alert("可以正常安装的---未标记掉签的应用---\n正常访问\n问题解答群：836603998");</script>
+     
+     
+     
+     
+     <!--头部导航条--> 
+ </head>
+ <body>
+  
 
-<head>
-    <meta charset="UTF-8">
-    <title>越狱工具</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="HandheldFriendly" content="True">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/css/materialize.css">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/css/normalize.css">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.carousel.css">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.theme.css">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.transitions.css">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/css/fakeLoader.css">
-    <link rel="stylesheet" href="https://hehedahhd.github.io/css/style.css">
-    <link rel="shortcut icon" href="https://hehedahhd.github.io/img/favicon.png">
-<script type="text/javascript" src="/static/js/jquery.min.js?ver=lastest"></script>
-
-
-
-
-</head>
-<body id = "body1"> 
-
-
-    <script type="text/javascript">
-
-    $(window).on("load",function(){
-
-        var winHeight = $(window).height();
-        
-        var s = navigator.userAgent.toLowerCase();
-
-
-
-        if (s.indexOf('iphone') > 0 || s.indexOf('ipad') > 0) {
-            document.getElementById('phone').src='/static/images/os_weixin.png';
-        }
-
-        function is_weixin() {
-
-            var ua = navigator.userAgent.toLowerCase();
-
-            if (ua.match(/MicroMessenger/i) == "micromessenger") {
-
-                return true;
-
-            } else {
-
-                return false;
-
-            }
-
-        }
-        function is_qq() {
-
-            var ua = navigator.userAgent.toLowerCase();
-
-            if (ua.match(/QQ/i) == "qq" && ua.indexOf('tbs')> -1) { 
-
-                return true;
-
-            } else {
-
-                return false;
-
-            }
-
-        }
-
-        function is_qq_apple() {
-
-            var ua = navigator.userAgent.toLowerCase();
-
-            if (ua.indexOf(' qq')>-1 && ua.indexOf('mqqbrowser') <0) { 
-
-                return true;
-
-            } else {
-
-                return false;
-
-            }
-
-        }
-
-        var isWeixin = is_weixin();
-
-        var ua = navigator.userAgent;
-
-        var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
-
-        isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
-
-        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
-
-        isMobile = isIphone || isAndroid;
-
-        if(isWeixin){
-
-            $(".weixin-tip").css("height",winHeight);
-            $(".weixin-tip").show();
-            $("#llq").hide();
-            $(".weixin-tip").show();
-
-            //判断
-
-            if(isMobile){ 
-              $("#adwximg").css("display","block");
-            }else{
-              $("#pcimg").css("display","block");
-            }
-
-        } else if(is_qq()|| is_qq_apple()) {
-
-            $(".weixin-tip").css("height",winHeight);
-            $(".weixin-tip").show();
-            $("#llq").hide();
-            $(".weixin-tip").show();
-
-            //判断
-
-            if(isMobile){
-              $("#adqqimg").css("display","block");
-            }else{
-              $("#pcimg").css("display","block");
-            }
-
-        } else {
-
-            if(isMobile){ 
-              $("#adimg").css("display","block");
-            }else{
-              $("#pcimg").css("display","block");
-            }
-
-            $("#llq").show();
-            $(".weixin-tip").hide();
-        }
-
-        
-
-        
-
-    })
-
-</script>
-
-
-</head>
-
-<body>
-  <div class="navbar-top">
-        <div class="side-nav-panel-left">
-            <a href="#" data-activates="slide-out-left" class="side-nav-left">
+  
+     
+     
+     
+     <header id="fenzhi-nav"> 
+   <div class="main"> 
+    <h1 class="logo"> <a> <span>工具列表</span> </a> </h1> 
+    <nav class="nav"> 
+     <ul> 
+      <!--获取导航链接/从首页向下第一个栏目起/只显示nav栏目组--> 
+      <li><a href=" ">QQ群</a></li> 
+      <li><a href=" ">安装防丢失工具</a></li> 
+      
+    </nav> 
+    <div class="bar-btn visible-xs visible-sm"> 
+     <a href="/index.htm"><img class="icon-bar2" src="http://152.136.120.155/png/logo.png" /><img /></a> 
+    </div> 
+    <button class="nav-btn visible-xs visible-sm"> <span class="icon-line top"></span> <span class="icon-line middle"></span> <span class="icon-line bottom"></span> </button> 
+   </div> 
+  </header> 
+  <div id="content"> 
+   <!--导航条--> 
+   <!--内容--> 
+   <div class="main"> 
+    <div class="container content-box"> 
+     <section class="sousuo"> 
+      <div class="search"> 
+       <div class="search-input">
+        <img class="search-icon" src="http://152.136.120.155/png/logo.png" /> 
+        <marquee class="info-item2" scrollamount="5">
+        点击安装后会有1-3秒的延迟弹出请耐心等待,安装一直黑图标等待点一下即可。
+        </marquee> 
+       </div> 
+      </div> 
+     </section> 
+     <!-- 搜索热词 --> 
+    </div> 
+    <!-- 搜索引擎 --> 
+   </div> 
+   <!--获取每个链接栏目的内容--> 
+   <section class="item card-box" id="row-29"> 
+    <div class="container-fluid"> 
+     <div class="row"> 
+      <i class="fa fa-cloud-download"></i> 
+      <!--获取内容列表--> 
+       
+                      <!-- head --> 
+       <div class="shortcut-lis"> 
+        <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+         <div class="shortcut"> 
+          <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+           <div class="user" style="display:;" data-v-481f0bb3=""> 
+            <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+             <img class="card-tit" src="http://152.136.120.155/png/un.png" /> 
+            </div> 
+            <div class="info" data-v-481f0bb3=""> 
+             <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">Unc0ver12.4.1</a> 
+            
+          
+               </div> 
+            <a href="http://152.136.120.155/tz/lz.php?url=https://www.lanzous.com/i8tc23e&type=down"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>380安装/随缘</span> </button> </a> 
                
-            </a>
-        </div>
-        <div class="site-brand">
-            <a href="https://www.baidu.com">
-                <h1>
-                    <span>点击加群</span>
-                </h1>
-            </a>
-        </div>
-        
-    </div>
-    <div class="side-nav-panel-left">
-        <ul id="slide-out-left" class="side-nav side-nav-panel collapsible">
-<li class="li-top">
-				<div class="collapsible-header active"><i class="fa fa-home"></i>分类 <span><i class="fa fa-caret-down"></i></span></div>
-				<div class="collapsible-body">
-					<ul class="side-nav-panel">
-            <li>
-                <a href="https://hehedahhd.github.io/index.html">首页</a>
-            </li
-						</ul>
-				</div>
-			</li>
-        </ul>
-    </div>
-	
-  <div class="pages section">
-		<div class="container">
-			<div class="pages-head">
-				<h3>越狱工具</h3>
-<p>越狱前现在设置-通用-关于本机记录设备的系统版本号，安装合适的越狱工具</p>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<div class="pricing">
-						<div class="pricing-head">
-							<img src="http://1.yydia.applinzi.com/Undecimus.png" height="60" width="60" />
-							<h4>Unc0ver新版</h4>
-						</div>
-						<ul>
-							<li>iOS 11.0 - 12.4 越狱工具,支持全部64位设备A7 - A12,版本号：3.6.3正式版</li>
-					
-						</ul>
-						  <a class="btn"  href="itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3Dfc0afeecd7a83e0b0143a5138bdf157f%26_api_key%3Ddfad463b01af37ba934e91c7f3e0f7d5">安装</a>
-					</div>
-				</div>
-				<div class="col s6">
-					<div class="pricing">
-						<div class="pricing-head">
-							<img src="http://1.yydia.applinzi.com/chimera.png" height="60" width="60" />
-							<h4>Chimera</h4>
-						</div>
-						<ul>
-							<li>12支持a7-a12 iOS 12 - 12.4 越狱工具,集成全新的越狱商店Sileo 不再自带Cydia,版本号：1.3.8最新版</li>
-						</ul>
-						  <a class="btn"  href="</a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<div class="pricing">
-						<div class="pricing-head">
-							<img src="http://1.yydia.applinzi.com/Meridian.png" height="60" width="60" />
-							<h4>Meridian</h4>
-						</div>
-						<ul>
-							<li> iOS 10-10.34全系列 越狱工具,版本号：最新版</li>
-						</ul>
-						<button onclick="javascript:top.location='itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3Dd8b1a12d7523ad6a2afe37f3dce3e6cc%26_api_key%3Ddfad463b01af37ba934e91c7f3e0f7d5';" type="button" class="btn button-default">安装</button>
-					</div>
-				</div>
-				<div class="col s6">
-					<div class="pricing">
-						<div class="pricing-head">
-							<img src="http://1.yydia.applinzi.com/Electra1141.png" height="60" width="60" />
-							<h4>Electra</h4>
-						</div>
-						<ul>
-							<li>iOS 11 - 11.4.1 越狱工具,版本号：最新版</li>
-						</ul>
-						<button onclick="javascript:top.location='itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3D76f2f0bba3264f81225837850bda4b0b%26_api_key%3Ddfad463b01af37ba934e91c7f3e0f7d5';" type="button" class="btn button-default">安装</button>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<div class="pricing">
-						<div class="pricing-head">
-							<img src="https://appicon.pgyer.com/image/view/app_icons/2c11df8bc1162ea642340ae52b3ab72a/120" height="60" width="60" />
-							<h4>乐网</h4>
-						</div>
-						<ul>
-							<li>可以修复cydia断网</li>
-						</ul>
-						<button onclick="javascript:top.location=' itms-services://?action=download-manifest&url=https://dl.i4.cn/plistfile/2017/08/14/09/1502675533562_625994_269617_68D67145-5AD4-4D7B-A43F-F4E5B8755838_2.plist';" type="button" class="btn button-default">安装</button>
-					</div>
-				</div>
-				<div class="col s6">
-					<div class="pricing">
-						<div class="pricing-head">
-							<img src="http://1.yydia.applinzi.com/xunlei.png" height="60" width="60" />
-							<h4>ios迅雷</h4>
-						</div>
-						<ul>
-							<li>iOS迅雷官方版</li>
-						</ul>
-						<button onclick="javascript:top.location='https://ithunder-ota.a.88cdn.com/download-guide/step1.html?from=gzhlm';" type="button" class="btn button-default">安装</button>
-					</div>
-				</div>
-			</div>
-		
-			</div>
-		</div>
-	</div>
-
-    
-
-    <div id="fakeLoader"></div>
-    <div class="footer">
-        <div class="container">
-            <div class="about-us-foot">
-                <h6>
-                    <span>官方交流群：660961700</span>
-                </h6>
-                <p>更新时间2019年9月16日</p>
-            </div>
-            <div class="copyright">
+               
               
-            </div>
+              
+              
+              
+              </div> 
+           <div class="information" data-v-481f0bb3=""> 
+            <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+            <!----> 
+            <!----> 
+           </div> 
+           <div class="info-item">
+             iOS 11.0 - 12.4.1 工具,只支持A12,版本号：3.8.0b1
+           </div>
+          </div>
+         </div>
+        </div> 
+                 <br /> 
+        <!-- end --> 
+         
+         
+        <!-- head --> 
+       <div class="shortcut-lis"> 
+        <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+         <div class="shortcut"> 
+          <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+           <div class="user" style="display:;" data-v-481f0bb3=""> 
+            <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+             <img class="card-tit" src="http://152.136.120.155/png/un.png" /> 
+            </div> 
+            <div class="info" data-v-481f0bb3=""> 
+             <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">Unc0ver新版</a> 
+            
+          
+            
+                
+             </div> 
+            <a href="http://152.136.120.155/tz/lz.php?url=https://www.lanzous.com/i8tc1te&type=down"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>B3测试版/随缘</span> </button> </a> 
+               
+               
+              
+               
+               
+               
+                </div>
+              
+           
+                <a href="http://152.136.120.155/tz/lz.php?url=https://www.lanzous.com/i8tc1xi&type=down"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>B4测试版</span> </button> </a> 
+               
+               
+              
+             
+              
+            <a href="http://152.136.120.155/tz/lz.php?url=https://www.lanzous.com/i8tc2ub&type=down"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+             <!---->
+             <!----> <span>363稳定版</span> </button> </a> 
+              
+              
+              </div> 
+           <div class="information" data-v-481f0bb3=""> 
+            <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+            <!----> 
+            <!----> 
+           </div> 
+           <div class="info-item">
+             iOS 11.0 - 12.4 工具,支持全部64位设备A7 - A12,版本号：3.7测试版和3.6.3稳定版（注：363不支持A12）
+           </div>
+          </div>
+         </div>
+        </div> 
+                 <br /> 
+        <!-- end --> 
+       
+      <!-- head --> 
+      <div class="shortcut-list t autoresize"> 
+       <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+        <div class="shortcut"> 
+         <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+          <div class="user" style="display:;" data-v-481f0bb3=""> 
+           <div class="avatar" style="height:40px;width:40px;"> 
+            <img class="card-tit" src="http://152.136.120.155/png/chimera.png" /> 
+           </div> 
+           <div class="info" data-v-481f0bb3=""> 
+            <a class="name" data-v-481f0bb3="">Chimera</a> 
+            
+           </div> 
+           <a href="http://152.136.120.155/tz/lz.php?url=https://www.lanzous.com/i8tc2ne&type=down"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+             <!---->
+             <!----> <span>安装/随缘</span> </button> </a> 
+          </div> 
+          <div class="information" data-v-481f0bb3=""> 
+          </div> 
+          <div class="info-item">
+            iOS 12 - 12.4 工具,集成全新的商店Sileo,版本号：1.3.9最新版
+          </div>
+         </div>
         </div>
+       </div>
+      </div> 
+      <!-- end --> 
+      <br /> 
+     
+           
+           
+                <div class="shortcut-lis"> 
+        <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+         <div class="shortcut"> 
+          <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+           <div class="user" style="display:;" data-v-481f0bb3=""> 
+            <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+             <img class="card-tit" src="http://152.136.120.155/png/ios3.png" /> 
+            </div> 
+            <div class="info" data-v-481f0bb3=""> 
+             <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">checkra1n ios13工具</a> 
+            
+         
+              
+              
+               </div> 
+            <a href="https://www.lanzous.com/tp/i7ssv8h"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>电脑安装</span> </button> </a> 
+              
+              <a href="https://www.lanzous.com/tp/i86ja3g"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>汉化版</span> </button> </a> 
+            
+            
+            
+            </div> 
+              
+             
+           <div class="information" data-v-481f0bb3=""> 
+            <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+            <!----> 
+            <!----> 
+           </div> 
+           <div class="info-item">
+             iOS 13工具（注：需要MACOS系统引导）
+           </div>
+          </div>
+         </div>
+        </div> 
+                 <br /> 
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           <!-- head --> 
+      <div class="shortcut-list autoresize"> 
+       <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+        <div class="shortcut"> 
+         <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+          <div class="user" style="display:;" data-v-481f0bb3=""> 
+           <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+            <img class="card-tit" src="http://152.136.120.155/png/meridian.png" /> 
+           </div> 
+           <div class="info" data-v-481f0bb3=""> 
+            <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">Meridian</a> 
+            
+           </div> 
+           <a href="itms-services://?action=download-manifest&url=https://gitee.com/bcwz/bcwz/raw/master/qn1/Meridian.plist"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+             <!---->
+             <!----> <span>安装</span> </button> </a> 
+          
+              &emsp; <a href="/wy/wy.mobileconfig"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+             <!---->
+             <!----> <span>网页激活</span> </button> </a> 
+             
+             </div> 
+          <div class="information" data-v-481f0bb3=""> 
+           <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+           <!----> 
+           <!----> 
+          </div> 
+          <div class="info-item">
+           iOS 10-10.34全系列工具,版本号：最新版(网页激活使用safari浏览器安装，否则无效/适合10系列新用户)
+          </div>
+         </div>
+        </div>
+       </div> 
+       <!-- end --> 
+       <br /> 
+       
+          
+          
+          
+          
+          
+          <!-- head --> 
+       <div class="shortcut-list autoresize"> 
+        <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+         <div class="shortcut"> 
+          <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+           <div class="user" style="display:;" data-v-481f0bb3=""> 
+            <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+             <img class="card-tit" src="http://152.136.120.155/png/xunlei.png" /> 
+            </div> 
+            <div class="info" data-v-481f0bb3=""> 
+             <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">迅雷</a> 
+             
+            
+            </div> 
+            <a href="https://ithunder-ota.a.88cdn.com/download-guide/step1.html?from=gzhlm"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>安装</span> </button> </a> 
+           </div> 
+           <div class="information" data-v-481f0bb3=""> 
+            <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+            <!----> 
+            <!----> 
+           </div> 
+           <div class="info-item">
+             迅雷官方版
+           </div>
+          </div>
+         </div>
+        </div> 
+        <!-- end --> 
+        <br /> 
+         
+                <!-- head --> 
+       <div class="shortcut-list autoresize"> 
+        <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+         <div class="shortcut"> 
+          <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+           <div class="user" style="display:;" data-v-481f0bb3=""> 
+            <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+             <img class="card-tit" src="http://152.136.120.155/png/cj.png" /> 
+            </div> 
+            <div class="info" data-v-481f0bb3=""> 
+             <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">QQ交流群</a> 
+             
+            </div> 
+            <a href="https://jq.qq.com/?_wv=1027&k=5t5WfQR"onclick="return confirm('群号836603998')"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>QQ交流群</span> </button> </a> 
+           </div> 
+           <div class="information" data-v-481f0bb3=""> 
+            <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+            <!----> 
+            <!----> 
+           </div> 
+           <div class="info-item">
+            自由讨论安装问题，问题互助。 
+           </div>
+          </div>
+         </div>
+        </div> 
+                 <br /> 
+        <!-- end --> 
+                <!-- head --> 
+       <div class="shortcut-list autoresize"> 
+        <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+         <div class="shortcut"> 
+          <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+           <div class="user" style="display:;" data-v-481f0bb3=""> 
+            <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+             <img class="card-tit" src="http://152.136.120.155/png/pb.png" /> 
+            </div> 
+            <div class="info" data-v-481f0bb3=""> 
+             <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">屏蔽系统更新</a> 
+             <//p class="time has-icon" data-v-481f0bb3=""> <i data-v-481f0bb3=""></i></p>
+            </div> 
+            <a href="/mobileconfig/tvOS_12_Beta_Profile.mobileconfig"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>屏蔽</span> </button> </a> 
+           </div> 
+           <div class="information" data-v-481f0bb3=""> 
+            <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+            <!----> 
+            <!----> 
+           </div> 
+           <div class="info-item">
+             屏蔽系统更新，去除更新弹窗
+           </div>
+          </div>
+         </div>
+        </div> 
+                 <br /> 
+        <!-- end --> 
+       </div> 
+      </div> 
+     </div>
     </div>
-    <script src="https://hehedahhd.github.io/js/jquery.min.js"></script>
-    <script src="https://hehedahhd.github.io/js/materialize.min.js"></script>
-    <script src="https://hehedahhd.github.io/js/owl.carousel.min.js"></script>
-    <script src="https://hehedahhd.github.io/js/fakeLoader.min.js"></script>
-    <script src="https://hehedahhd.github.io/js/main.js"></script>
-    <script src="https://hehedahhd.github.io/js/IFSafari.js"></script>
-</body>
 
+         
+          <div class="shortcut-lis"> 
+        <div class="shortcut-list-item" data-v-1d37c6a3=""> 
+         <div class="shortcut"> 
+          <div class="sub" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;" data-v-481f0bb3=""> 
+           <div class="user" style="display:;" data-v-481f0bb3=""> 
+            <div class="avatar" style="height:40px;width:40px;" data-v-7c8eb7ad="" data-v-481f0bb3=""> 
+             <img class="card-tit" src="http://152.136.120.155/png/ios3.png" /> 
+            </div> 
+            <div class="info" data-v-481f0bb3=""> 
+             <a href="/user/1qmnYqpnD5" class="name" data-v-481f0bb3="">降级工具</a> 
+            
+           
+              
+               </div> 
+            <a href="https://www.lanzous.com/i86ja5i"> <button type="button" class="el-button base-button el-button--text primary" style="color:#9839c9;" data-v-0b43de5e="">
+              <!---->
+              <!----> <span>电脑安装</span> </button> </a> 
+              
+              </div> 
+              
+              
+           <div class="information" data-v-481f0bb3=""> 
+            <div class="info-item types" style="display:none;" data-v-481f0bb3=""></div> 
+            <!----> 
+            <!----> 
+           </div> 
+           <div class="info-item">
+            最高支持a7设备（可以降级到10.3.3）
+           </div>
+          </div>
+         </div>
+        </div> 
+         
+         
+         
+         <!-- 屏蔽代码开始 -->
+        
+        <body oncontextmenu="return false" onselectstart="return false" 
+
+ondragstart="return false" onbeforecopy="return false" oncopy=document.selection.empty() onselect=document.selection.empty()>
+        <!-- 禁止12代码开始 -->
+        
+            
+            
+            
+            url:"picpopup/getImageInfo?time="+new Date(),
+            
+        </section> 
+  </div> 
+  
+      
+         <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+        
+        <script src="http://152.136.120.155/zy/js/jquery.js"></script> 
+  <!-- ZUI Javascript组件 --> 
+  <script src="http://152.136.120.155/zy/js/zui.js"></script> 
+  <script src="./js/js.js"></script> 
+      
+ </body>
 </html>
