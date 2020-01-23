@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>越狱工具</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/materialize.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/normalize.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.carousel.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.theme.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.transitions.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/fakeLoader.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/style.css">
+    <link rel="shortcut icon" href="https://hehedahhd.github.io/img/favicon.png">
+<script type="text/javascript" src="/static/js/jquery.min.js?ver=lastest"></script>
+
+
+
+
+</head>
+<body id = "body1"> 
+
+
+    <script type="text/javascript">
+
+    $(window).on("load",function(){
+
+        var winHeight = $(window).height();
+        
+        var s = navigator.userAgent.toLowerCase();
+
+
+
+        if (s.indexOf('iphone') > 0 || s.indexOf('ipad') > 0) {
+            document.getElementById('phone').src='/static/images/os_weixin.png';
+        }
+
+        function is_weixin() {
+
+            var ua = navigator.userAgent.toLowerCase();
+
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+
+                return true;
+
+            } else {
+
+                return false;
+
+            }
+
+        }
+        function is_qq() {
+
+            var ua = navigator.userAgent.toLowerCase();
+
+            if (ua.match(/QQ/i) == "qq" && ua.indexOf('tbs')> -1) { 
+
+                return true;
+
+            } else {
+
+                return false;
+
+            }
+
+        }
+
+        function is_qq_apple() {
+
+            var ua = navigator.userAgent.toLowerCase();
+
+            if (ua.indexOf(' qq')>-1 && ua.indexOf('mqqbrowser') <0) { 
+
+                return true;
+
+            } else {
+
+                return false;
+
+            }
+
+        }
+
+        var isWeixin = is_weixin();
+
+        var ua = navigator.userAgent;
+
+        var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+
+        isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+
+        isMobile = isIphone || isAndroid;
+
+        if(isWeixin){
+
+            $(".weixin-tip").css("height",winHeight);
+            $(".weixin-tip").show();
+            $("#llq").hide();
+            $(".weixin-tip").show();
+
+            //判断
+
+            if(isMobile){ 
+              $("#adwximg").css("display","block");
+            }else{
+              $("#pcimg").css("display","block");
+            }
+
+        } else if(is_qq()|| is_qq_apple()) {
+
+            $(".weixin-tip").css("height",winHeight);
+            $(".weixin-tip").show();
+            $("#llq").hide();
+            $(".weixin-tip").show();
+
+            //判断
+
+            if(isMobile){
+              $("#adqqimg").css("display","block");
+            }else{
+              $("#pcimg").css("display","block");
+            }
+
+        } else {
+
+            if(isMobile){ 
+              $("#adimg").css("display","block");
+            }else{
+              $("#pcimg").css("display","block");
+            }
+
+            $("#llq").show();
+            $(".weixin-tip").hide();
+        }
+
+        
+
+        
+
+    })
+
+</script>
+
+
+</head>
+
+<body>
+  <div class="navbar-top">
+        <div class="side-nav-panel-left">
+            <a href="#" data-activates="slide-out-left" class="side-nav-left">
+               
+            </a>
+        </div>
+        <div class="site-brand">
+            <a href="https://www.baidu.com">
+                <h1>
+                    <span>点击加群</span>
+                </h1>
+            </a>
+        </div>
+        
+    </div>
+    <div class="side-nav-panel-left">
+        <ul id="slide-out-left" class="side-nav side-nav-panel collapsible">
+<li class="li-top">
+				<div class="collapsible-header active"><i class="fa fa-home"></i>分类 <span><i class="fa fa-caret-down"></i></span></div>
+				<div class="collapsible-body">
+					<ul class="side-nav-panel">
+            <li>
+                <a href="https://hehedahhd.github.io/index.html">首页</a>
+            </li
+						</ul>
+				</div>
+			</li>
+        </ul>
+    </div>
+	
+  <div class="pages section">
+		<div class="container">
+			<div class="pages-head">
+				<h3>越狱工具</h3>
+<p>越狱前现在设置-通用-关于本机记录设备的系统版本号，安装合适的越狱工具</p>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<img src="http://1.yydia.applinzi.com/Undecimus.png" height="60" width="60" />
+							<h4>Unc0ver新版</h4>
+						</div>
+						<ul>
+							<li>iOS 11.0 - 12.4 越狱工具,支持全部64位设备A7 - A12,版本号：3.6.3正式版</li>
+					
+						</ul>
+						  <a class="btn"  href="itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3Dfc0afeecd7a83e0b0143a5138bdf157f%26_api_key%3Ddfad463b01af37ba934e91c7f3e0f7d5">安装</a>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<img src="http://1.yydia.applinzi.com/chimera.png" height="60" width="60" />
+							<h4>Chimera</h4>
+						</div>
+						<ul>
+							<li>12支持a7-a12 iOS 12 - 12.4 越狱工具,集成全新的越狱商店Sileo 不再自带Cydia,版本号：1.3.8最新版</li>
+						</ul>
+						  <a class="btn"  href="</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<img src="http://1.yydia.applinzi.com/Meridian.png" height="60" width="60" />
+							<h4>Meridian</h4>
+						</div>
+						<ul>
+							<li> iOS 10-10.34全系列 越狱工具,版本号：最新版</li>
+						</ul>
+						<button onclick="javascript:top.location='itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3Dd8b1a12d7523ad6a2afe37f3dce3e6cc%26_api_key%3Ddfad463b01af37ba934e91c7f3e0f7d5';" type="button" class="btn button-default">安装</button>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<img src="http://1.yydia.applinzi.com/Electra1141.png" height="60" width="60" />
+							<h4>Electra</h4>
+						</div>
+						<ul>
+							<li>iOS 11 - 11.4.1 越狱工具,版本号：最新版</li>
+						</ul>
+						<button onclick="javascript:top.location='itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3D76f2f0bba3264f81225837850bda4b0b%26_api_key%3Ddfad463b01af37ba934e91c7f3e0f7d5';" type="button" class="btn button-default">安装</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<img src="https://appicon.pgyer.com/image/view/app_icons/2c11df8bc1162ea642340ae52b3ab72a/120" height="60" width="60" />
+							<h4>乐网</h4>
+						</div>
+						<ul>
+							<li>可以修复cydia断网</li>
+						</ul>
+						<button onclick="javascript:top.location=' itms-services://?action=download-manifest&url=https://dl.i4.cn/plistfile/2017/08/14/09/1502675533562_625994_269617_68D67145-5AD4-4D7B-A43F-F4E5B8755838_2.plist';" type="button" class="btn button-default">安装</button>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="pricing">
+						<div class="pricing-head">
+							<img src="http://1.yydia.applinzi.com/xunlei.png" height="60" width="60" />
+							<h4>ios迅雷</h4>
+						</div>
+						<ul>
+							<li>iOS迅雷官方版</li>
+						</ul>
+						<button onclick="javascript:top.location='https://ithunder-ota.a.88cdn.com/download-guide/step1.html?from=gzhlm';" type="button" class="btn button-default">安装</button>
+					</div>
+				</div>
+			</div>
+		
+			</div>
+		</div>
+	</div>
+
+    
+
+    <div id="fakeLoader"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="about-us-foot">
+                <h6>
+                    <span>官方交流群：660961700</span>
+                </h6>
+                <p>更新时间2019年9月16日</p>
+            </div>
+            <div class="copyright">
+              
+            </div>
+        </div>
+    </div>
+    <script src="https://hehedahhd.github.io/js/jquery.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/materialize.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/owl.carousel.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/fakeLoader.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/main.js"></script>
+    <script src="https://hehedahhd.github.io/js/IFSafari.js"></script>
+</body>
+
+</html>
